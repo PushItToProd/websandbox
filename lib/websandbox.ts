@@ -54,7 +54,7 @@ export const BaseOptions: SandboxOptions = {
 class Websandbox {
   options: SandboxOptions;
   iframe: HTMLIFrameElement;
-  promise: Promise<unknown>;
+  promise: Promise<Websandbox>;
   connection: Connection | null = null;
   removeMessageListener: () => void = () => {};
 
